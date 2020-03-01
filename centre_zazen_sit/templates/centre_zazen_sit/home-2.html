@@ -1,0 +1,59 @@
+{% load static %}
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+
+    <title>Zazen Center</title>
+  </head>
+<style> 
+body{
+   background-image: url("{% static 'centre_zazen_sit/images/background2.jpg' %}");
+  background-repeat: repeat;
+}
+
+@font-face {
+    font-family: 'BebasNeue';
+    font-weight: 100;
+    font-style: normal;
+    src: url('../fonts/BebasNeue/BebasNeue Thin.otf') format('opentype');
+}
+
+</style>
+
+  <body>
+    <div style="background-color:rgb(45, 68, 148); color:rgb(224, 234, 246); font-family: BebasNeue" align="center"> 
+    <img src="{% static 'centre_zazen_sit/images/zazen-tiles.jpg' %}" class="img-fluid" alt="Responsive image"> </img>
+      <h1 style="color:rgb(240, 233, 227);"> Zazen Center </h1> 
+      <p style="color:rgb(240, 233, 227);"> Cultural center </p> 
+      <div class="container">
+    <div class="topnav">
+      <a style="color:rgb(240, 233, 227);" href="#home">Home</a>
+      <a style="color:rgb(240, 233, 227);" href="#news">Feed</a>
+      <a style="color:rgb(240, 233, 227);" href="#contact">Contact</a>
+      <a style="color:rgb(240, 233, 227);" href="#about">About</a>
+    </div>
+  </div>
+       <img src="{% static 'centre_zazen_sit/images/zazen-tiles.jpg' %}" class="img-fluid" alt="Responsive image"> </img>
+    </div>
+
+<!--
+  <div align="center" style="background-color:white; height: 100%;  opacity:.5;">
+     <p style="color:black; opacity:1;">
+          hello there
+     </p>
+  </div>
+-->
+    
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+  </body>
+</html>
