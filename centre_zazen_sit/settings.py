@@ -40,6 +40,14 @@ INSTALLED_APPS = [
     'django.contrib.staticfiles',
 ]
 
+"""
+'oauth_tokens',
+    'm2m_history',
+    'taggit',
+    'instagram_api',
+
+    """
+
 MIDDLEWARE = [
     'django.middleware.security.SecurityMiddleware',
     'django.contrib.sessions.middleware.SessionMiddleware',
@@ -100,6 +108,15 @@ AUTH_PASSWORD_VALIDATORS = [
     },
 ]
 
+
+"""
+# oauth-tokens settings
+OAUTH_TOKENS_HISTORY = True # to keep in DB expired access tokens
+OAUTH_TOKENS_TWITTER_CLIENT_ID = '' # application ID
+OAUTH_TOKENS_TWITTER_CLIENT_SECRET = '' # application secret key
+OAUTH_TOKENS_TWITTER_USERNAME = '' # user login
+OAUTH_TOKENS_TWITTER_PASSWORD = '' # user password
+"""
 
 # Internationalization
 # https://docs.djangoproject.com/en/3.0/topics/i18n/

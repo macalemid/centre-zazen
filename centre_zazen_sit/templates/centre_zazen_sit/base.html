@@ -19,16 +19,16 @@
   <nav class="navbar navbar-default" style="background-color:#4056A1;">
   <div class="container-fluid"  >
     <div class="navbar-header">
-      <a class="navbar-brand" href="#">Zazen</a>
+      <a class="navbar-brand" href="{% url 'home' %}">Zazen</a>
     </div>
 
-    <ul class="nav navbar-nav">
-      <li class="active"><a href="#">Home</a></li>
-      <li><a href="#">Events</a></li>
-      <li><a href="#">Restaurant</a></li>
-      <li><a href="#">Gallery</a></li>
-      <li><a href="#">Feed</a></li>
-      <li><a href="#">About</a></li>
+    <ul class="nav navbar-nav" class="pagination">
+      <li class="active"><a href="{% url 'home' %}">Home</a></li>
+      <li><a href="{% url 'events' %}">Events</a></li>
+      <li><a href="{% url 'restaurant' %}">Restaurant</a></li>
+      <li><a href="{% url 'gallery' %}">Gallery</a></li>
+      <li><a href="{% url 'feed' %}">Feed</a></li>
+      <li><a href="{% url 'about' %}">About</a></li> 
     </ul>
   </div>
 </nav>
